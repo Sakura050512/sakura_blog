@@ -1,4 +1,203 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月19日 20:32:09</lastBuildDate><item><title>Windows 命令行与批处理</title><link>https://sakurahu.netlify.app/posts/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/</guid><description>了解 Windows 命令行与批处理</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;命令行&lt;a href=&quot;#命令行&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;cmd与PowerShell&lt;a href=&quot;#cmd与powershell&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;cmd是power shell的子集。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;说明&lt;a href=&quot;#说明&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月19日 20:44:53</lastBuildDate><item><title>Linux基础命令</title><link>https://sakurahu.netlify.app/posts/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid><description>了解 Linux基础命令</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;Linux系统的目录结构&lt;a href=&quot;#linux系统的目录结构&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Linux的目录结构——树形结构
+&lt;ul&gt;
+&lt;li&gt;没有盘符的概念，只有一个根目录/，所有文件都在它下面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Linux路径的描述方式
+&lt;ul&gt;
+&lt;li&gt;Linux系统中，路径路径之间的层级关系用 /&lt;/li&gt;
+&lt;li&gt;Windows系统中，路径之间的层级关系用 \&lt;/li&gt;
+&lt;li&gt;例：在根目录下有一个文件夹test，文件夹内有一个文件hello.txt，请描述文件的路径——   /test/hello.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;Linux命令入门&lt;a href=&quot;#linux命令入门&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;Linux命令基础&lt;a href=&quot;#linux命令基础&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;命令，命令行
+&lt;ul&gt;
+&lt;li&gt;命令：Linux操作指令，是系统内置的程序，可以以字符化的形式去使用&lt;/li&gt;
+&lt;li&gt;命令行：Linux终端，可以提供字符化的操作页面供命令执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Linux命令的通用格式
+&lt;code&gt;command [-options] [parameter]&lt;/code&gt;
+command：命令本身
+-options：可选选项，控制命令的行为细节
+parameter：可选参数，控制命令的指向目标&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;ls命令入门&lt;a href=&quot;#ls命令入门&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;ls命令的作用：在命令行中，展示当前工作目录（默认HOME目录）下的内容（文件或文件夹）&lt;/li&gt;
+&lt;li&gt;HOME目录：每一个用户在Linux系统的专属目录&lt;/li&gt;
+&lt;li&gt;当前工作目录：Linux命令行在执行命令时，需要一个工作目录，打开命令行程序（终端）默认设置工作目录在用户的HOME目录&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;ls命令的参数和选项&lt;a href=&quot;#ls命令的参数和选项&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ls [-a -l -h] [Linux路径]&lt;/code&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;ls不使用参数：表示列出当前工作目录的内容，即用户的HOME目录&lt;/li&gt;
+&lt;li&gt;ls的选项
+&lt;ul&gt;
+&lt;li&gt;-a：可以展示出隐藏的内容&lt;/li&gt;
+&lt;li&gt;-l：以列表的形式展示内容，并展示更多细节&lt;/li&gt;
+&lt;li&gt;-h：必须和-l一起使用，能够显示文件的大小单位&lt;/li&gt;
+&lt;li&gt;-a，-l，-h 可以组合使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ls的参数
+&lt;ul&gt;
+&lt;li&gt;可以指定要查看的文件夹（目录）的内容，如果不给定参数，就查看当前工作目录的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;目录切换相关命令（cd/pwd）&lt;a href=&quot;#目录切换相关命令cdpwd&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;cd命令：切换当前工作目录
+&lt;code&gt;cd [Linux路径]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;没有选项只有参数，表示目标路径&lt;/li&gt;
+&lt;li&gt;使用参数，切换到指定路径&lt;/li&gt;
+&lt;li&gt;不使用参数，切换工作目录到当前用户的HOME&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pwd命令：输出当前所在的工作目录
+&lt;code&gt;pwd&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;没有选项和参数，直接使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;相对路径，绝对路径和特殊路径符&lt;a href=&quot;#相对路径绝对路径和特殊路径符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;绝对路径：以根目录做起点，描述路径的方式，路径以 / 开头&lt;/li&gt;
+&lt;li&gt;相对路径：以当前目录做起点，描述路径的方式，路径不需以 / 开头&lt;/li&gt;
+&lt;li&gt;特殊路径符
+&lt;ul&gt;
+&lt;li&gt;. 表示当前目录。如cd . 或 cd ./Desktop&lt;/li&gt;
+&lt;li&gt;.. 表示上一级目录。如cd .. 或 cd ../..&lt;/li&gt;
+&lt;li&gt;~ 表示用户的HOME目录。如cd ~ 或 cd ~/Desktop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;创建目录命令（mkdir）&lt;a href=&quot;#创建目录命令mkdir&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;mkdir命令：创建新的目录和文件夹
+&lt;code&gt;mkdir [-p] Linux路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;参数必填，表示要创建的目录的路径，相对，绝对，特殊路径符都可以使用&lt;/li&gt;
+&lt;li&gt;-p：可选，表示自动创建不存在的父目录，适用于创建连续多层级的目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;文件操作命令（touch/cat/more/cp/mv/rm）&lt;a href=&quot;#文件操作命令touchcatmorecpmvrm&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;touch命令：用于创建一个新的文件
+&lt;code&gt;touch Linux路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;参数必填，表示要创建的目录的路径，相对，绝对，特殊路径符都可以使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cat命令：用于查看文件内容
+&lt;code&gt;cat Linux路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;参数必填，表示要创建的目录的路径，相对，绝对，特殊路径符都可以使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;more命令：用于查看文件内容，可翻页查看
+&lt;code&gt;more Linux路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;参数必填，表示要创建的目录的路径，相对，绝对，特殊路径符都可以使用&lt;/li&gt;
+&lt;li&gt;使用空格进行翻页，使用q退出查看&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cp(copy)命令：用于复制文件或文件夹
+&lt;code&gt;cp [-r] 参数1 参数2&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;-r：可选，用于复制文件夹，表示递归&lt;/li&gt;
+&lt;li&gt;参数1：Linux路径，表示被复制的文件或文件夹&lt;/li&gt;
+&lt;li&gt;参数2：Linux路径，表示要复制去的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;mv(move)命令：用于移动文件或文件夹
+&lt;code&gt;mv 参数1 参数2&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;参数1：Linux路径，表示被移动的文件或文件夹&lt;/li&gt;
+&lt;li&gt;参数2：Linux路径，表示要移动去的地方，如果目标不存在，则进行改名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rm(remove命令)：用于删除文件或文件夹
+&lt;code&gt;rm [-r -f] 参数1 参数2 ... 参数N&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;-r：可选项，用于文件夹删除&lt;/li&gt;
+&lt;li&gt;-f：可选项，用于强制删除（不提示，一般用于root用户）&lt;/li&gt;
+&lt;li&gt;参数：表示被删除的文件或文件夹路径，支持多个，空格隔开&lt;/li&gt;
+&lt;li&gt;参数也支持通配符 * ，用以做模糊匹配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;which/find 命令&lt;a href=&quot;#whichfind-命令&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;which命令：查找命令的程序文件
+&lt;code&gt;which 要查找的命令&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;无需选项，只需要参数表示查找哪个命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;find命令：用于查找指定的文件
+&lt;ul&gt;
+&lt;li&gt;按文件名查找：&lt;code&gt;find 起始路径 -name &quot;被查找文件名&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;支持通配符&lt;/li&gt;
+&lt;li&gt;按文件大小查找： &lt;code&gt;find 起始路径 -size +(-) n[k M G]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;grep/wc/管道符&lt;a href=&quot;#grepwc管道符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;grep命令：从文件中通过关键字过滤文件行
+&lt;code&gt;grep [-n] 关键字 文件路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;-n：可选，表示在结果中显示匹配的行的行号&lt;/li&gt;
+&lt;li&gt;关键字：必填，建议使用 “ ” 将关键字包围&lt;/li&gt;
+&lt;li&gt;文件路径：必填，表示要过滤内容的文件路径，可作为管道符的输入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;wc命令：统计文件的行数，单词数量，字节数，字符数等
+&lt;code&gt;wc [-c -m -l -w] 文件路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;不带选项的默认统计：行数，单词数，字节数&lt;/li&gt;
+&lt;li&gt;-c字节数，-m字符数，-l行数，-w单词数&lt;/li&gt;
+&lt;li&gt;文件路径：被统计的文件路径，可作为管道符的输入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;管道符 | ：将管道符左边命令的结果作为右边命令的输入&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;echo/tail/重定向符&lt;a href=&quot;#echotail重定向符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;echo命令：在命令行内输出指定内容
+&lt;code&gt;echo 输出的内容&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;无需选项，只有一个参数，表示要输出的内容，复杂内容可以用 “ “ 包围&lt;/li&gt;
+&lt;li&gt;反引号符 ` `：被反引号包围的内容，会被作为命令执行，而非普通字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tail命令：查看文件尾部的内容，并可以持续跟踪
+&lt;code&gt;tail [-f -num] Linux路径&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;-f：持续跟踪&lt;/li&gt;
+&lt;li&gt;-num：启动的时候查看尾部多少行，默认10（-2，-3，…-x）&lt;/li&gt;
+&lt;li&gt;Linux路径：表示被查看的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;重定向符
+&lt;ul&gt;
+&lt;li&gt;&amp;gt; ：将左侧命令的结果，覆盖写入到符号右侧指定的文件中&lt;/li&gt;
+&lt;li&gt;&amp;gt;&amp;gt; ：将左侧命令的结果，追加写入到符号右侧指定的文件中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;vi/vim编辑器&lt;a href=&quot;#vivim编辑器&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;vi/vim编辑器：命令行模式下的文本编辑器，用来编辑文件。vim是vi的升级版，一般用vim即可，包含vi全部功能&lt;/li&gt;
+&lt;li&gt;基础命令
+&lt;code&gt;vi 文件路径&lt;/code&gt;
+&lt;code&gt;vim 文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;三种运行模式
+&lt;ul&gt;
+&lt;li&gt;命令模式：默认模式，可以通过键盘快捷键控制文件内容&lt;/li&gt;
+&lt;li&gt;输入模式：通过命令模式进入，可以对输入内容进行编辑，按esc退回命令模式&lt;/li&gt;
+&lt;li&gt;底线命令模式：通过命令模式进入，可以对文件进行保存，关闭等操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&quot;lazy&quot; width=&quot;735&quot; height=&quot;506&quot; src=&quot;/_astro/2.D7Pm7KRp_17aAPO.webp&quot; srcset=&quot;/_astro/2.D7Pm7KRp_1ByWMg.webp 640w, /_astro/2.D7Pm7KRp_17aAPO.webp 735w&quot; /&gt;
+&lt;img loading=&quot;lazy&quot; width=&quot;1084&quot; height=&quot;544&quot; src=&quot;/_astro/3.j-BA1kKX_ZSBPqF.webp&quot; srcset=&quot;/_astro/3.j-BA1kKX_Z2tegQy.webp 640w, /_astro/3.j-BA1kKX_IRFEf.webp 750w, /_astro/3.j-BA1kKX_Z2hGeXm.webp 828w, /_astro/3.j-BA1kKX_Zzrgmf.webp 1080w, /_astro/3.j-BA1kKX_ZSBPqF.webp 1084w&quot; /&gt;
+&lt;img loading=&quot;lazy&quot; width=&quot;1521&quot; height=&quot;575&quot; src=&quot;/_astro/4.BpCTMYik_Z1SWeaf.webp&quot; srcset=&quot;/_astro/4.BpCTMYik_Z1Fg0u0.webp 640w, /_astro/4.BpCTMYik_Z14AoCP.webp 750w, /_astro/4.BpCTMYik_Z1t2oED.webp 828w, /_astro/4.BpCTMYik_2i10Pv.webp 1080w, /_astro/4.BpCTMYik_16Tpuo.webp 1280w, /_astro/4.BpCTMYik_Z1SWeaf.webp 1521w&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;</content:encoded></item><item><title>Windows 命令行与批处理</title><link>https://sakurahu.netlify.app/posts/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/</guid><description>了解 Windows 命令行与批处理</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;命令行&lt;a href=&quot;#命令行&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;section&gt;&lt;h2&gt;cmd与PowerShell&lt;a href=&quot;#cmd与powershell&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;cmd是power shell的子集。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;说明&lt;a href=&quot;#说明&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;不区分大小写&lt;/li&gt;
 &lt;li&gt;按上下键可以查看历史命令&lt;/li&gt;
 &lt;li&gt;Tab键可以自动补全&lt;/li&gt;
@@ -219,7 +418,26 @@
 &lt;p&gt;遍历文件内容&lt;/p&gt;
 &lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; /f [&lt;/span&gt;&lt;span&gt;&quot;options&quot;&lt;/span&gt;&lt;span&gt;] %%i in (&lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;通配符&lt;a href=&quot;#通配符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;?    &lt;/span&gt;&lt;span&gt;# 单个字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;*    &lt;/span&gt;&lt;span&gt;# 任意字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;例子&lt;a href=&quot;#例子&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;按顺序为文件夹中的文件命名。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Dandelion_gong/article/details/78067501&quot; target=&quot;_blank&quot;&gt;批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;@echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;off&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;setlocal&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;enabledelayedexpansion&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=&lt;/span&gt;&lt;span&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; %%i in (&lt;/span&gt;&lt;span&gt;%1&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;span&gt; (&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;rename&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;%%i&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;!cnt!.txt&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/a&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=!cnt!&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pause&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>软件开发技术生态地图(claude)</title><link>https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</guid><description>软件开发的技术生态地图</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;📌 前言&lt;a href=&quot;#-前言&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;这份文档将软件开发的众多技术栈按&lt;strong&gt;层级和功能&lt;/strong&gt;分类，帮助你理解它们的关系和应用场景。&lt;/p&gt;&lt;hr /&gt;&lt;/section&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;通配符&lt;a href=&quot;#通配符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;?    &lt;/span&gt;&lt;span&gt;# 单个字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;*    &lt;/span&gt;&lt;span&gt;# 任意字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;例子&lt;a href=&quot;#例子&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;按顺序为文件夹中的文件命名。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Dandelion_gong/article/details/78067501&quot; target=&quot;_blank&quot;&gt;批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;@echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;off&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;setlocal&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;enabledelayedexpansion&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=&lt;/span&gt;&lt;span&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; %%i in (&lt;/span&gt;&lt;span&gt;%1&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;span&gt; (&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;rename&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;%%i&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;!cnt!.txt&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/a&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=!cnt!&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pause&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>云计算相关</title><link>https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3/</guid><description>云计算相关知识</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;简要了解&lt;a href=&quot;#简要了解&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;云计算：通过互联网，&lt;strong&gt;按需提供&lt;/strong&gt;的计算资源&lt;/li&gt;
+&lt;li&gt;云计算的不同类型：IaaS、PaaS、SaaS
+&lt;ul&gt;
+&lt;li&gt;IaaS：基础设施即服务&lt;/li&gt;
+&lt;li&gt;PaaS：平台即服务&lt;/li&gt;
+&lt;li&gt;SaaS：软件即服务
+&lt;img loading=&quot;lazy&quot; width=&quot;864&quot; height=&quot;416&quot; src=&quot;/_astro/1.mYc6ZgcX_Z1fWipa.webp&quot; srcset=&quot;/_astro/1.mYc6ZgcX_1NXJqL.webp 640w, /_astro/1.mYc6ZgcX_1Ma0t0.webp 750w, /_astro/1.mYc6ZgcX_LLVFf.webp 828w, /_astro/1.mYc6ZgcX_Z1fWipa.webp 864w&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;云计算的优势
+&lt;ul&gt;
+&lt;li&gt;敏捷：在网上快速操作就能获得计算资源&lt;/li&gt;
+&lt;li&gt;弹性：可以根据需要 对计算资源实时调整&lt;/li&gt;
+&lt;li&gt;省钱：不需要买断服务器，实际用了多少资源就付多少费用&lt;/li&gt;
+&lt;li&gt;全球化：遍布全球的数据中心可以让计算资源离用户更近，降低延迟，提升体验&lt;/li&gt;
+&lt;li&gt;促进科技创新，大家只需要把时间和精力用在如何提供差异化服务上，而不用在服务器、数据库、网络等基础技术上消耗人力物力和财力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;</content:encoded></item><item><title>软件开发技术生态地图(claude)</title><link>https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</guid><description>软件开发的技术生态地图</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;📌 前言&lt;a href=&quot;#-前言&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;这份文档将软件开发的众多技术栈按&lt;strong&gt;层级和功能&lt;/strong&gt;分类，帮助你理解它们的关系和应用场景。&lt;/p&gt;&lt;hr /&gt;&lt;/section&gt;
 &lt;section&gt;&lt;h2&gt;第一部分：核心分层架构&lt;a href=&quot;#第一部分核心分层架构&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;软件开发从下到上分为以下几个层次：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;┌──────────────────────────────────────────────────┐&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│           用户界面层 (UI/UX)                      │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│     前端框架层 (Web/Mobile Frontend)              │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│        后端服务层 (Backend Services)              │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│      数据存储层 (Databases &amp;amp; Cache)               │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│    基础设施层 (DevOps &amp;amp; Cloud)                    │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│      操作系统 &amp;amp; 硬件层                            │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;└──────────────────────────────────────────────────┘&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;hr /&gt;&lt;/section&gt;
 &lt;section&gt;&lt;h2&gt;第二部分：详细技术生态&lt;a href=&quot;#第二部分详细技术生态&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;1️⃣ 前端开发技术栈&lt;a href=&quot;#1️⃣-前端开发技术栈&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;section&gt;&lt;h4&gt;核心语言&lt;a href=&quot;#核心语言&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;JavaScript/TypeScript&lt;/strong&gt; - 前端最流行的编程语言

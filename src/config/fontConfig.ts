@@ -1,11 +1,11 @@
 // 字体配置
 export const fontConfig = {
 	// 是否启用自定义字体功能
-	enable: false,
+	enable: true,
 	// 是否预加载字体文件
 	preload: true,
 	// 当前选择的字体，支持多个字体组合
-	selected: ["misans-regular"],
+	selected: ["lxgw-wenkai"],
 
 	// 字体列表
 	// 推荐使用可靠的 CDN 服务商提供的字体链接，它天然做了按需分片加载，且性能较好
@@ -69,10 +69,22 @@ export const fontConfig = {
 			weight: 600,
 			display: "swap" as const,
 		},
+
+		// 霞鹜文楷
+		"lxgw-wenkai": {
+			id: "lxgw-wenkai",
+			name: "霞鹜文楷",
+			src: "https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@400;500;600;700&display=swap",
+			family: "LXGW WenKai",
+			display: "swap" as const,
+		},
 	},
 
 	// 全局字体回退
 	fallback: [
+		"PingFang SC",
+		"Microsoft YaHei",
+		"Noto Sans SC",
 		"system-ui",
 		"-apple-system",
 		"BlinkMacSystemFont",

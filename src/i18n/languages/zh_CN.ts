@@ -79,11 +79,11 @@ export const zh_CN: Translation = {
 	[Key.updatedAt]: "更新于",
 	[Key.readTime]: "阅读时长",
 	[Key.license]: "许可协议",
-	[Key.bangumi]: "番组计划",
+	[Key.bangumi]: "记录",
 
 	// 番组计划筛选和状态文本
-	[Key.bangumiTitle]: "我的番组计划",
-	[Key.bangumiSubtitle]: "记录我的二次元之旅",
+	[Key.bangumiTitle]: "记录",
+	[Key.bangumiSubtitle]: "在这里记录我生活中的点点滴滴，与你分享我的热爱。",
 	[Key.bangumiFilterAll]: "全部",
 	[Key.bangumiFilterWatched]: "看过",
 	[Key.bangumiFilterWatching]: "在看",

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月20日 23:50:23</lastBuildDate><item><title>Linux 实用操作</title><link>https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>了解 Linux实用操作</description><pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;各类小技巧快捷键&lt;a href=&quot;#各类小技巧快捷键&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;强制停止&lt;code&gt;ctrl + c&lt;/code&gt;&lt;a href=&quot;#强制停止ctrl--c&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月20日 23:58:18</lastBuildDate><item><title>Linux 实用操作</title><link>https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>了解 Linux实用操作</description><pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;各类小技巧快捷键&lt;a href=&quot;#各类小技巧快捷键&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;强制停止&lt;code&gt;ctrl + c&lt;/code&gt;&lt;a href=&quot;#强制停止ctrl--c&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;强制停止某些程序的运行&lt;/li&gt;
 &lt;li&gt;命令输入错误也可以通过该快捷键退出当前输入&lt;/li&gt;
 &lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;退出或登出&lt;code&gt;ctrl + d&lt;/code&gt;&lt;a href=&quot;#退出或登出ctrl--d&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
@@ -383,11 +383,7 @@
 &lt;li&gt;su命令：可以切换用户
 &lt;code&gt;su [-] [用户名]&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;：表示切换后加载环境变量，建议带上&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;- ：表示切换后加载环境变量，建议带上&lt;/li&gt;
 &lt;li&gt;用户可以省略，省略默认切换到root&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

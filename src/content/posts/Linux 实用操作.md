@@ -3,9 +3,9 @@ title: Linux 实用操作
 published: 2026-04-20
 updated: 2026-04-20
 description: '了解 Linux实用操作'
-tags: [Linux,学习笔记]
+tags: [Linux, 学习笔记]
 category: 'Linux'
-draft: false
+draft: true
 ---
 
 ## 各类小技巧快捷键

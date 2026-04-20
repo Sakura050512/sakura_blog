@@ -5,7 +5,7 @@ updated: 2026-04-20
 description: '了解 Linux用户和权限'
 tags: [Linux, 学习笔记]
 category: 'Linux'
-draft: false
+draft: true
 ---
 
 ## Linux的root用户

@@ -4,8 +4,8 @@ published: 2026-04-19
 updated: 2026-04-19
 description: "了解 Windows 命令行与批处理"
 image: "./images/1.png"
-tags: [Windows]
-category: "学习笔记"
+tags: [Windows,学习笔记]
+category: "Windows"
 draft: false
 ---
 # 命令行

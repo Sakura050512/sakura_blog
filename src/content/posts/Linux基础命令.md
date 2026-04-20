@@ -3,9 +3,8 @@ title: Linux基础命令
 published: 2026-04-19
 updated: 2026-04-19
 description: "了解 Linux基础命令"
-image: "./images/2.png"
-tags: [Linux]	
-category: "学习笔记"
+tags: [Linux,学习笔记]	
+category: "Linux"
 draft: false
 ---
 

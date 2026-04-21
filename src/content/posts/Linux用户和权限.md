@@ -5,7 +5,7 @@ updated: 2026-04-20
 description: '了解 Linux用户和权限'
 tags: [Linux, 学习笔记]
 category: 'Linux'
-draft: true
+draft: false
 ---
 
 ## Linux的root用户
@@ -59,12 +59,12 @@ draft: true
    `usermod -aG 用户组 用户名`
    - 将指定用户加入指定组
 5. getent命令
-   `getent passwd`
-   - 查看当前系统中有哪些用户
-   - 输出信息的格式：用户名：密码(x)：用户ID：组ID：描述信息(无用)：HOME目录：执行终端(默认bash)
-     `getent group`
-   - 查看当前系统中有哪些用户组
-   - 输出信息的格式：组名称：组认证(显示为x)：组ID
+   - `getent passwd`
+		- 查看当前系统中有哪些用户
+		- 输出信息的格式：用户名：密码(x)：用户ID：组ID：描述信息(无用)：HOME目录：执行终端(默认bash)
+   - `getent group`
+   	 - 查看当前系统中有哪些用户组
+   	 - 输出信息的格式：组名称：组认证(显示为x)：组ID
 
 ## 查看权限控制信息
 

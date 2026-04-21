@@ -5,7 +5,7 @@ updated: 2026-04-20
 description: '了解 Linux实用操作'
 tags: [Linux, 学习笔记]
 category: 'Linux'
-draft: true
+draft: false
 ---
 
 ## 各类小技巧快捷键
@@ -111,9 +111,9 @@ draft: true
 ### 修改Linux时区
 
 1. 使用root权限，执行如下命令
-   `rm -f /etc/localtime`
-   `sudo ln -s /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime`
-   (将系统自带的localtime文件删除，并将/usr/share/zoneinfo/Asia/Shanghai链接为localtime文件即可)
+  	- 删除系统自带的localtime文件：`rm -f /etc/localtime`
+  	- 创建软链接：`sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
+> (将系统自带的localtime文件删除，并将/usr/share/zoneinfo/Asia/Shanghai链接为localtime文件即可)
 
 ### ntp程序校准系统时间
 

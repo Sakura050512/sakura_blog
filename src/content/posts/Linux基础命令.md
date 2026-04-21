@@ -21,10 +21,10 @@ draft: false
 	+ 命令：Linux操作指令，是系统内置的程序，可以以字符化的形式去使用
 	+ 命令行：Linux终端，可以提供字符化的操作页面供命令执行
 2. Linux命令的通用格式
-	  `command [-options] [parameter]`
-	command：命令本身
-	-options：可选选项，控制命令的行为细节
-	parameter：可选参数，控制命令的指向目标
+ `command [-options] [parameter]`
+	+ command：命令本身
+	+ options：可选选项，控制命令的行为细节
+	+ parameter：可选参数，控制命令的指向目标
 ### ls命令入门
 1. ls命令的作用：在命令行中，展示当前工作目录（默认HOME目录）下的内容（文件或文件夹）
 2. HOME目录：每一个用户在Linux系统的专属目录

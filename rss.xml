@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月21日 10:27:57</lastBuildDate><item><title>Linux 实用操作</title><link>https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>了解 Linux实用操作</description><pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;各类小技巧快捷键&lt;a href=&quot;#各类小技巧快捷键&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;强制停止&lt;code&gt;ctrl + c&lt;/code&gt;&lt;a href=&quot;#强制停止ctrl--c&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura</title><description>blog</description><link>https://sakurahu.netlify.app/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.9.3</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年4月21日 22:10:12</lastBuildDate><item><title>Linux 实用操作</title><link>https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/linux-%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>了解 Linux实用操作</description><pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;各类小技巧快捷键&lt;a href=&quot;#各类小技巧快捷键&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;强制停止&lt;code&gt;ctrl + c&lt;/code&gt;&lt;a href=&quot;#强制停止ctrl--c&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;强制停止某些程序的运行&lt;/li&gt;
 &lt;li&gt;命令输入错误也可以通过该快捷键退出当前输入&lt;/li&gt;
 &lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;退出或登出&lt;code&gt;ctrl + d&lt;/code&gt;&lt;a href=&quot;#退出或登出ctrl--d&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
@@ -976,25 +976,180 @@
 &lt;p&gt;遍历文件内容&lt;/p&gt;
 &lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; /f [&lt;/span&gt;&lt;span&gt;&quot;options&quot;&lt;/span&gt;&lt;span&gt;] %%i in (&lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;通配符&lt;a href=&quot;#通配符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;?    &lt;/span&gt;&lt;span&gt;# 单个字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;*    &lt;/span&gt;&lt;span&gt;# 任意字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;例子&lt;a href=&quot;#例子&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;按顺序为文件夹中的文件命名。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Dandelion_gong/article/details/78067501&quot; target=&quot;_blank&quot;&gt;批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;@echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;off&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;setlocal&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;enabledelayedexpansion&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=&lt;/span&gt;&lt;span&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; %%i in (&lt;/span&gt;&lt;span&gt;%1&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;span&gt; (&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;rename&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;%%i&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;!cnt!.txt&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/a&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=!cnt!&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pause&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>云计算相关</title><link>https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3/</guid><description>云计算相关知识</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;简要了解&lt;a href=&quot;#简要了解&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;云计算：通过互联网，&lt;strong&gt;按需提供&lt;/strong&gt;的计算资源&lt;/li&gt;
-&lt;li&gt;云计算的不同类型：IaaS、PaaS、SaaS
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;通配符&lt;a href=&quot;#通配符&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;?    &lt;/span&gt;&lt;span&gt;# 单个字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;*    &lt;/span&gt;&lt;span&gt;# 任意字符&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;例子&lt;a href=&quot;#例子&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;按顺序为文件夹中的文件命名。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Dandelion_gong/article/details/78067501&quot; target=&quot;_blank&quot;&gt;批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;Terminal window&lt;/span&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;@echo&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;off&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;setlocal&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;enabledelayedexpansion&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=&lt;/span&gt;&lt;span&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;for&lt;/span&gt;&lt;span&gt; %%i in (&lt;/span&gt;&lt;span&gt;%1&lt;/span&gt;&lt;span&gt;) &lt;/span&gt;&lt;span&gt;do&lt;/span&gt;&lt;span&gt; (&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;rename&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;%%i&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;!cnt!.txt&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;set&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;/a&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;cnt=!cnt!&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;pause&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>云计算相关（一）【云计算基础篇】</title><link>https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3%E4%B8%80%E4%BA%91%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80%E7%AF%87/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3%E4%B8%80%E4%BA%91%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80%E7%AF%87/</guid><description>云计算相关知识</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;什么是云计算？&lt;a href=&quot;#什么是云计算&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;云计算是一种&lt;strong&gt;按使用量付费&lt;/strong&gt;的模式，这种模式提供可用的、便捷的、按需的网络访问，进入可配置的计算资源共享池（资源包括网络、服务、存储、应用软件、服务），这些资源能够被快速提供，只需投入很少的理性工作，或与服务供应商进行很少的交互。也就是说，&lt;strong&gt;云计算提供的是一种新的资源按需租用的服务模式，也是一种新型的互联网数据中心业务&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;简单来说：按需购买，按量付费的互联网资源。&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算有什么特性？&lt;a href=&quot;#云计算有什么特性&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;超大规模&lt;/strong&gt;：公有云平台动辄就有几十万台甚至上百万台服务器，企业私有云一般拥有数百上千台服务器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高可靠性&lt;/strong&gt;：“云”使用了数据多副本容错、计算节点同构可互换等措施，提高数据的高可靠性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多租户隔离&lt;/strong&gt;：允许多个不同的租户共享底层的硬件资源，但是在上层逻辑上是隔离的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;弹性伸缩&lt;/strong&gt;：可根据业务负载的变化自动或手动调整资源规模，满足应用和用户规模增长的需求。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;按需服务&lt;/strong&gt;：用户可以根据自己的需求随时获取/使用云计算资源，无需人工干预。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;资源可监控计量&lt;/strong&gt;：云平台提供资源的监控和计量功能，用户只需为实际使用的资源付费，无需承担传统IT架构中硬件采购、机房维护等固定成本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;低成本&lt;/strong&gt;：用户无需负担高昂的数据中心管理成本，以较低成本、最短时间获得最有效的资源，提供了极高的性价比。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚拟化&lt;/strong&gt;：支持用户在任意位置，使用各种终端获取应用服务。&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算的&lt;strong&gt;三层核心服务&lt;/strong&gt;&lt;a href=&quot;#云计算的三层核心服务&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;IaaS：基础设施即服务（提供基础设施资源）&lt;/li&gt;
+&lt;li&gt;PaaS：平台即服务（提供平台）&lt;/li&gt;
+&lt;li&gt;SaaS：软件即服务（提供应用程序）
+![[Pasted image 20260301161806.png]]&lt;/li&gt;
+&lt;li&gt;灵活性：IaaS &amp;gt; PaaS &amp;gt; SaaS&lt;/li&gt;
+&lt;li&gt;成本：IaaS &amp;gt; PaaS &amp;gt; SaaS&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算中有哪些计费方式？&lt;a href=&quot;#云计算中有哪些计费方式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;按需付费&lt;/strong&gt;：用户根据自己的实际使用情况付费，使用多少就付多少，价格相对较高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;包年包月&lt;/strong&gt;：用户一次性购买一定时间内的计算资源，费用相对较低。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预留实例&lt;/strong&gt;：海外云厂商(AWS、Azure)的主流长期计费模式，用户预付一定费用购买特定规格实例的长期使用权。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;按竞价方式计费&lt;/strong&gt;：云厂商针对闲置物理资源推出的低价计费模式，用户通过“竞拍”方式获取资源，价格远低于按需实例付费。适合可中断、非核心的业务场景。&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算的四种模式以及它们之间的区别&lt;a href=&quot;#云计算的四种模式以及它们之间的区别&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;四种模式&lt;a href=&quot;#四种模式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;公有云&lt;/strong&gt;：由第三方云服务商提供，通过互联网共享基础设施和服务**
 &lt;ul&gt;
-&lt;li&gt;IaaS：基础设施即服务&lt;/li&gt;
-&lt;li&gt;PaaS：平台即服务&lt;/li&gt;
-&lt;li&gt;SaaS：软件即服务
-&lt;img loading=&quot;lazy&quot; width=&quot;864&quot; height=&quot;416&quot; src=&quot;/_astro/1.mYc6ZgcX_Z1fWipa.webp&quot; srcset=&quot;/_astro/1.mYc6ZgcX_1NXJqL.webp 640w, /_astro/1.mYc6ZgcX_1Ma0t0.webp 750w, /_astro/1.mYc6ZgcX_LLVFf.webp 828w, /_astro/1.mYc6ZgcX_Z1fWipa.webp 864w&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;核心特性：按需付费、即开即用、资源弹性扩展，安全性依赖服务商的保障机制，无需企业自建基础设施。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;云计算的优势
+&lt;li&gt;&lt;strong&gt;私有云&lt;/strong&gt;：由企业或者第三方建设和管理，由单一云服务用户专享**（可能部署在企业内部或者托管数据中心，具备公有云所有关键特征，但硬件、软件、网络资源由该组织独占使用。）
 &lt;ul&gt;
-&lt;li&gt;敏捷：在网上快速操作就能获得计算资源&lt;/li&gt;
-&lt;li&gt;弹性：可以根据需要 对计算资源实时调整&lt;/li&gt;
-&lt;li&gt;省钱：不需要买断服务器，实际用了多少资源就付多少费用&lt;/li&gt;
-&lt;li&gt;全球化：遍布全球的数据中心可以让计算资源离用户更近，降低延迟，提升体验&lt;/li&gt;
-&lt;li&gt;促进科技创新，大家只需要把时间和精力用在如何提供差异化服务上，而不用在服务器、数据库、网络等基础技术上消耗人力物力和财力。&lt;/li&gt;
+&lt;li&gt;核心特征：企业对资源的完全自主控制能力、较高的安全性水平、支持深度定制、技术灵活性高，但是需要企业自行维护基础设施且成本投入较高。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;混合云&lt;/strong&gt;：结合公有云和私有云**
+&lt;ul&gt;
+&lt;li&gt;核心特性：整合两者优势，关键数据存储在私有云，利用公有云实现弹性资源扩展，部署复杂度较高。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;==行业云==：由行业内或某个区域内起主导作用或者掌握关键资源的组织建立和维护&lt;/strong&gt;（如金融云、政务云、医疗云、卫生云等）&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;四种模式的区别&lt;a href=&quot;#四种模式的区别&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;模式&lt;/th&gt;&lt;th&gt;典型场景&lt;/th&gt;&lt;th&gt;业务价值&lt;/th&gt;&lt;th&gt;客户关注点&lt;/th&gt;&lt;th&gt;优势&lt;/th&gt;&lt;th&gt;劣势&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;公有云&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;中小企业、电商促销、个人云存储 (如阿里云、AWS)&lt;/td&gt;&lt;td&gt;零硬件投入、快速扩容、降低门槛&lt;/td&gt;&lt;td&gt;成本、快速上线、数据主权与合规认证&lt;/td&gt;&lt;td&gt;规模大、成本低、功能全面&lt;/td&gt;&lt;td&gt;存在性能波动风险、定制化能力弱&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;私有云&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;金融核心系统、政府涉密平台 (如 OpenStack)&lt;/td&gt;&lt;td&gt;数据本地化、满足监管、避免多租户安全风险&lt;/td&gt;&lt;td&gt;安全与隐私要求高、自主可控、运维能力评估&lt;/td&gt;&lt;td&gt;支持定制、不影响现有 IT 流程&lt;/td&gt;&lt;td&gt;成本高、周期长、扩展灵活性差&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;混合云&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;核心数据在私有云，报表分析或弹性扩容在公有云&lt;/td&gt;&lt;td&gt;平衡成本与安全、敏感业务本地化、非敏感业务云化&lt;/td&gt;&lt;td&gt;兼顾合规与效率、关注跨云同步与网络设计&lt;/td&gt;&lt;td&gt;架构综合、部署灵活、数据本地化&lt;/td&gt;&lt;td&gt;架构复杂、成本较高、运维难度大&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;行业云&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;金融云、政务云、医疗云、卫生云&lt;/td&gt;&lt;td&gt;深度适配行业流程、提供垂直方案、减少重复建设&lt;/td&gt;&lt;td&gt;行业专属合规 (如等保、医疗隐私)、系统适配性&lt;/td&gt;&lt;td&gt;针对行业优化、成本较低、共享最佳实践&lt;/td&gt;&lt;td&gt;支持范围窄、跨行业复用性差、更新慢&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;公有云和私有云的对比&lt;a href=&quot;#公有云和私有云的对比&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;功能&lt;/th&gt;&lt;th&gt;私有云&lt;/th&gt;&lt;th&gt;公有云&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;服务提供&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;根据客户的需要提供&lt;/td&gt;&lt;td&gt;由服务提供商设置&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;运维管理&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;负责运维管理的是云服务提供商、客户自己或第三方，或是上述的组合&lt;/td&gt;&lt;td&gt;由云服务提供商负责运维管理&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;安全管理、监控与认证&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;由云服务提供商、客户自己或第三方，也或者是它们的不同组合&lt;/td&gt;&lt;td&gt;由云服务提供商负责安全管理&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;弹性与可扩展&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;可扩展，但受计算资源规模的限制&lt;/td&gt;&lt;td&gt;无限可扩展，有服务等级保证&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;准备时间&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;需要初始化建立&lt;/td&gt;&lt;td&gt;数分钟&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;私有云的三种部署方式&lt;a href=&quot;#私有云的三种部署方式&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;本地部署私有云&lt;/strong&gt;：部署在企业自有的数据中心内。
+&lt;ul&gt;
+&lt;li&gt;优点：控制力强，数据完全留在内部&lt;/li&gt;
+&lt;li&gt;缺点：前期资本投入高，需要专业的运维团队&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;托管私有云&lt;/strong&gt;：部署在第三方服务商(如电信运营商、IDC)的机房内
+&lt;ul&gt;
+&lt;li&gt;优点：无需自建机房&lt;/li&gt;
+&lt;li&gt;缺点：不如本地部署直接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;专有云&lt;/strong&gt;：这是公有云厂商提供的一种服务，将公有云软硬件一体机放到本地的数据中心，提供和公有云一致的操作体验和API
+&lt;ul&gt;
+&lt;li&gt;优点：与公有云无缝混合，使用相同的工具和技术栈&lt;/li&gt;
+&lt;li&gt;缺点：成本较高，且与特定云厂商深度绑定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算的优缺点&lt;a href=&quot;#云计算的优缺点&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;优点&lt;a href=&quot;#优点&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;对于消费者
+&lt;ul&gt;
+&lt;li&gt;降低前期投入成本和日常使用成本&lt;/li&gt;
+&lt;li&gt;提高了系统的可靠性、安全性、用户体验&lt;/li&gt;
+&lt;li&gt;使用户可以专注于自己的核心业务和市场&lt;/li&gt;
+&lt;li&gt;快速响应对计算资源的弹性需要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对于社会
+&lt;ul&gt;
+&lt;li&gt;降低能耗、减少排放&lt;/li&gt;
+&lt;li&gt;提高IT设备使用率，降低设备数量，信息技术产业进一步分工合理&lt;/li&gt;
+&lt;li&gt;有利于全社会共享信息，打破信息孤岛&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h3&gt;缺点&lt;a href=&quot;#缺点&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;严重依赖网络&lt;/li&gt;
+&lt;li&gt;数据可能泄露的环节增多（安全性）&lt;/li&gt;
+&lt;li&gt;用户对技术和数据的掌控度下降&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;云计算的演进&lt;a href=&quot;#云计算的演进&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;积累阶段&lt;/strong&gt;（1959——1999）：虚拟化、网络、分布式、并行等技术成熟。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;初步阶段&lt;/strong&gt;（2006——2009）：Saleforce成立，成为全球最早的一家SaaS公司；同年Loudcloud成立，成为全球第一家IaaS服务商。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;形成阶段&lt;/strong&gt;（2009——2015）：IaaS、PaaS和SaaS三种模式全部出现，IT/电信/互联网行业纷纷进军云计算领域。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;发展阶段&lt;/strong&gt;（2009——2015）：云的种类逐渐完善，传统企业开始上云。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;现今阶段&lt;/strong&gt;（2015——）：政府和公共服务也逐渐上云，云的产品和功能逐渐健全，形成了云的标准化。&lt;/li&gt;
 &lt;/ol&gt;&lt;/section&gt;</content:encoded></item><item><title>软件开发技术生态地图(claude)</title><link>https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</link><guid isPermaLink="true">https://sakurahu.netlify.app/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E7%94%9F%E6%80%81%E5%9C%B0%E5%9B%BE/</guid><description>软件开发的技术生态地图</description><pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h2&gt;📌 前言&lt;a href=&quot;#-前言&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;这份文档将软件开发的众多技术栈按&lt;strong&gt;层级和功能&lt;/strong&gt;分类，帮助你理解它们的关系和应用场景。&lt;/p&gt;&lt;hr /&gt;&lt;/section&gt;
 &lt;section&gt;&lt;h2&gt;第一部分：核心分层架构&lt;a href=&quot;#第一部分核心分层架构&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;软件开发从下到上分为以下几个层次：&lt;/p&gt;&lt;div&gt;&lt;figure&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;pre&gt;&lt;code&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;┌──────────────────────────────────────────────────┐&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│           用户界面层 (UI/UX)                      │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│     前端框架层 (Web/Mobile Frontend)              │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;5&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│        后端服务层 (Backend Services)              │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;7&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;8&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│      数据存储层 (Databases &amp;amp; Cache)               │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;9&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;10&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│    基础设施层 (DevOps &amp;amp; Cloud)                    │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;11&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;├──────────────────────────────────────────────────┤&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;12&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;│      操作系统 &amp;amp; 硬件层                            │&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;13&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;└──────────────────────────────────────────────────┘&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;&lt;hr /&gt;&lt;/section&gt;
 &lt;section&gt;&lt;h2&gt;第二部分：详细技术生态&lt;a href=&quot;#第二部分详细技术生态&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;section&gt;&lt;h3&gt;1️⃣ 前端开发技术栈&lt;a href=&quot;#1️⃣-前端开发技术栈&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;&lt;section&gt;&lt;h4&gt;核心语言&lt;a href=&quot;#核心语言&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
